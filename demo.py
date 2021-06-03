@@ -289,7 +289,7 @@ if __name__ == '__main__':
             webbrowser.open("https://www.google.nl / maps / place/" + location + "")
  
         elif "camera" in query or "take a photo" in query:
-            ec.capture(0, "Jarvis Camera ", "img.jpg")
+            ec.capture(0, "krishna Camera ", "img.jpg")
  
         elif "restart" in query:
             subprocess.call(["shutdown", "/r"])
@@ -304,10 +304,10 @@ if __name__ == '__main__':
             subprocess.call(["shutdown", "/l"])
  
         elif "write a note" in query:
-            speak("What should i write, sir")
+            speak("What should i write,")
             note = takeCommand()
             file = open('jarvis.txt', 'w')
-            speak("Sir, Should i include date and time")
+            speak(", Should i include date and time")
             snfm = takeCommand()
             if 'yes' in snfm or 'sure' in snfm:
                 strTime = datetime.datetime.now().strftime("% H:% M:% S")
@@ -319,11 +319,11 @@ if __name__ == '__main__':
          
         elif "show note" in query:
             speak("Showing Notes")
-            file = open("jarvis.txt", "r")
+            file = open("krishna.txt", "r")
             print(file.read())
             speak(file.read(6))
  
-        elif "update assistant" in query:
+        elif "update" in query:
             speak("After downloading file please replace this file with the downloaded one")
             url = '# url after uploading file'
             r = requests.get(url, stream = True)
@@ -338,10 +338,10 @@ if __name__ == '__main__':
                       Pypdf.write(ch)
                      
         # NPPR9-FWDCX-D2C8J-H872K-2YT43
-        elif "jarvis" in query:
+        elif "what is ............." in query:
              
             wishMe()
-            speak("Jarvis 1 point o in your service Mister")
+            speak("...........................")
             speak(assname)
  
         elif "weather" in query:
@@ -393,8 +393,8 @@ if __name__ == '__main__':
             speak(assname)
  
         # most asked question from google Assistant
-        elif "will you be my gf" in query or "will you be my bf" in query:  
-            speak("I'm not sure about, may be you should give me some time")
+        elif "what is............" in query or "will you be my bf" in query:  
+            speak("............................")
  
         elif "how are you" in query:
             speak("I'm fine, glad you me that")
