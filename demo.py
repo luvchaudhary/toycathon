@@ -40,7 +40,7 @@ def wishMe():
         speak("Good Afternoon Son !")  
   
     else:
-        speak("Good Evening Son !") 
+        speak("Good Evening!") 
   
     assname =("Krishna 2 point o")
     speak("I am your mentor krishna")
@@ -48,9 +48,9 @@ def wishMe():
      
  
 def usrname():
-    speak("What should i call you son")
+    speak("What should i call you ")
     uname = takeCommand()
-    speak("Welcome son")
+    speak("Welcome ")
     speak(uname)
     columns = shutil.get_terminal_size().columns
      
@@ -58,7 +58,7 @@ def usrname():
     print("Welcome Mr.", uname.center(columns))
     print("#####################".center(columns))
      
-    speak("How can i Help you, Sir")
+    speak("How can i Help you, ")
  
 def takeCommand():
      
@@ -136,7 +136,7 @@ if __name__ == '__main__':
             print(songs)   
             random = os.startfile(os.path.join(music_dir, songs[1]))
  
-        elif 'the time' in query:
+        elif "what's the time by you watch?" in query:
             strTime = datetime.datetime.now().strftime("% H:% M:% S")   
             speak(f"Sir, the time is {strTime}")
  
@@ -167,7 +167,7 @@ if __name__ == '__main__':
  
         elif 'how are you' in query:
             speak("I am fine, Thank you")
-            speak("How are you, Son")
+            speak("How are you, mate")
  
         elif 'fine' in query or "good" in query:
             speak("It's good to know that your fine")
