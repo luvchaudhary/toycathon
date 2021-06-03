@@ -136,7 +136,7 @@ if __name__ == '__main__':
             print(songs)   
             random = os.startfile(os.path.join(music_dir, songs[1]))
  
-        elif "what's the time by you watch?" in query:
+        elif "what's the time by your watch?" in query:
             strTime = datetime.datetime.now().strftime("% H:% M:% S")   
             speak(f"Sir, the time is {strTime}")
  
@@ -190,8 +190,8 @@ if __name__ == '__main__':
             speak("Thanks for giving me your time")
             exit()
  
-        elif "who made you" in query or "who created you" in query:
-            speak("I have been created by Gaurav.")
+        elif "............." in query or "..............." in query:
+            speak("................")
              
         elif 'joke' in query:
             speak(pyjokes.get_joke())
@@ -393,7 +393,7 @@ if __name__ == '__main__':
             speak(assname)
  
         # most asked question from google Assistant
-        elif "what is............" in query or "will you be my bf" in query:  
+        elif "what is............" in query or "wil.............." in query:  
             speak("............................")
  
         elif "how are you" in query:
